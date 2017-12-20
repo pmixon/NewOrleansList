@@ -49,14 +49,24 @@ public class ListEntryAdapter extends ArrayAdapter<ListEntry>  {
         if (currentListEntry.hasImage()) {
             imageView.setImageResource(currentListEntry.getImageResourceId());
             imageView.setVisibility(View.VISIBLE);
+            // Set the theme color for the list item
+            View imageContainer = listItemView.findViewById(R.id.image);
+            // Find the color that the resource ID maps to
+            int color = ContextCompat.getColor(getContext(), mColorResourceId);
+            imageContainer.setBackgroundColor(color);
+
         } else {
             imageView.setVisibility(View.GONE);
         }
 
+        View fullContainer = listItemView.findViewById(R.id.full_container);
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        fullContainer.setBackgroundColor(color);
+
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
         // Find the color that the resource ID maps to
-        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
 
