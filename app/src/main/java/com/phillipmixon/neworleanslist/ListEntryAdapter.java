@@ -43,7 +43,9 @@ public class ListEntryAdapter extends ArrayAdapter<ListEntry>  {
         textTwo.setText(currentListEntry.getmTextTwoId());
 
         TextView textThree = (TextView) listItemView.findViewById(R.id.text_three);
-        textThree.setText(currentListEntry.getmTextThreeId());
+        if (!(currentListEntry.getmTextThreeId() == -1)) {
+            textThree.setText(currentListEntry.getmTextThreeId());
+        }
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
         if (currentListEntry.hasImage()) {

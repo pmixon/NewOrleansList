@@ -13,10 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
         TextView facts = (TextView) findViewById(R.id.facts_menu_item);
-
-        // Set a click listener on that View
         facts.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
@@ -35,6 +32,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent historicalIntent = new Intent(MainActivity.this,HistoricalActivity.class);
                 startActivity(historicalIntent);
+            }
+        });
+
+        TextView events = (TextView) findViewById(R.id.events_menu_item);
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent eventsIntent = new Intent(MainActivity.this,EventsActivity.class);
+                startActivity(eventsIntent);
+            }
+        });
+
+        TextView resaurants = (TextView) findViewById(R.id.restaurants_menu_item);
+        resaurants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent restaurantsIntent = new Intent(MainActivity.this,RestaurantsActivity.class);
+                startActivity(restaurantsIntent);
             }
         });
 

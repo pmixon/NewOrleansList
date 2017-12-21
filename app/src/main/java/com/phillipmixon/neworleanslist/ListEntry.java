@@ -13,7 +13,7 @@ public class ListEntry {
     private int mTextTwoId;
 
     /** String resource ID for the third text option */
-    private int mTextThreeId;
+    private int mTextThreeId = NO_TEXT_THREE;
 
     /** Audio resource ID for the word */
     private int mAudioResourceId;
@@ -23,6 +23,12 @@ public class ListEntry {
 
     /** Constant value that represents no image was provided for this word */
     private static final int NO_IMAGE_PROVIDED = -1;
+    private static final int NO_TEXT_THREE = -1;
+
+    public ListEntry(int textOneId, int textTwoId) {
+        mTextOneId = textOneId;
+        mTextTwoId = textTwoId;
+    }
 
     public ListEntry(int textOneId, int textTwoId, int textThreeId) {
         mTextOneId = textOneId;
@@ -30,11 +36,11 @@ public class ListEntry {
         mTextThreeId = textThreeId;
     }
 
-    public ListEntry(int textOneId, int textTwoId, int textThreeId, int audioResourceId) {
+    public ListEntry(int textOneId, int textTwoId, int textThreeId, int imageResourceId) {
         mTextOneId = textOneId;
         mTextTwoId = textTwoId;
         mTextThreeId = textThreeId;
-        mAudioResourceId = audioResourceId;
+        mImageResourceId = imageResourceId;
     }
 
     public ListEntry(int textOneId, int textTwoId, int textThreeId, int imageResourceId, int audioResourceId) {

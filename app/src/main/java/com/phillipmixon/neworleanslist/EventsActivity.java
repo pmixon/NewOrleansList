@@ -1,18 +1,16 @@
 package com.phillipmixon.neworleanslist;
 
-import android.media.AudioFocusRequest;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class FactsActivity extends AppCompatActivity {
+public class EventsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +20,13 @@ public class FactsActivity extends AppCompatActivity {
 
         final ArrayList<ListEntry> listEntries = new ArrayList<ListEntry>();
 
-        listEntries.add(new ListEntry(R.string.opera_title, R.string.opera_text_one));
-        listEntries.add(new ListEntry(R.string.poker_title, R.string.poker_text_one));
-        listEntries.add(new ListEntry(R.string.super_dome_title, R.string.super_dome_text_one));
+        listEntries.add(new ListEntry(R.string.aquarium, R.string.aquarium_address, R.string.aquarium_phone, R.drawable.ic_event_seat_black_24dp));
+        listEntries.add(new ListEntry(R.string.preservation_hall, R.string.preservation_hall_address, R.string.preservation_hall_phone, R.drawable.ic_library_music_black_24dp));
 
-        ListEntryAdapter adapter = new ListEntryAdapter(this, listEntries, R.color.facts_colors);
+        ListEntryAdapter adapter = new ListEntryAdapter(this, listEntries, R.color.events_colors);
 
         ListView listView = (ListView) findViewById(R.id.list_entry_list);
 
         listView.setAdapter(adapter);
-
     }
 }

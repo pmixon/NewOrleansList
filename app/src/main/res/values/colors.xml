@@ -4,8 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <!-- Background color for the colors category -->
     <color name="historical_colors">#00a055</color>
+    <color name="facts_colors">#dc9fd9</color>
+    <color name="events_colors">#efaf6b</color>
+    <color name="restaurants_colors">#cc5b77</color>
 
 
 </resources>

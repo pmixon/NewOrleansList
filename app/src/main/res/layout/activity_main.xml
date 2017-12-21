@@ -7,7 +7,16 @@
     android:orientation="vertical"
     tools:context="com.phillipmixon.neworleanslist.MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/new_orleans"
+        android:textAlignment="center"
+        android:textSize="56sp" />
+
     <LinearLayout
+        android:gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -16,38 +25,42 @@
         <TextView
             android:id="@+id/facts_menu_item"
             android:layout_width="match_parent"
+            android:background="@color/facts_colors"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="Facts"
+            android:text="@string/facts"
             android:textAlignment="center"
-            android:textSize="48dp" />
+            android:textSize="48sp" />
 
         <TextView
             android:id="@+id/historial_menu_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/historical_colors"
             android:padding="12dp"
-            android:text="Historical Sites"
+            android:text="@string/historical_sites"
             android:textAlignment="center"
-            android:textSize="48dp" />
+            android:textSize="48sp" />
 
         <TextView
             android:id="@+id/restaurants_menu_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="Restaurants"
+            android:background="@color/restaurants_colors"
+            android:text="@string/restaurants"
             android:textAlignment="center"
-            android:textSize="48dp" />
+            android:textSize="48sp" />
 
         <TextView
             android:id="@+id/events_menu_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="Events"
+            android:background="@color/events_colors"
+            android:text="@string/events"
             android:textAlignment="center"
-            android:textSize="48dp" />
+            android:textSize="48sp" />
 
     </LinearLayout>
 

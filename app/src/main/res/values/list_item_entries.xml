@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="st_louis_cathedral">St. Louis Cathedral</string>
+    <string name="st_louis_cathedral_address">615 Pere Antoine Alley, New Orleans, LA 70116</string>
+    <string name="st_louis_cathedral_phone">504.525.9585</string>
+
+    <string name="aquarium">Aquarium of the Americas</string>
+    <string name="aquarium_address">1 Canal St, New Orleans, LA 70130</string>
+    <string name="aquarium_phone">504.565.3033</string>
+
+    <string name="preservation_hall">Preservation Hall</string>
+    <string name="preservation_hall_address">726 St Peter St, New Orleans, LA 70116</string>
+    <string name="preservation_hall_phone">504.522.2841</string>
+
+    <string name="bourbon_st">Aquarium of the Americas</string>
+    <string name="bourbon_st_text_one">Bourbon Street is a street in the heart of New Orleans oldest neighborhood, the French Quarter, in New Orleans, Louisiana. It extends 13 blocks from Canal to Esplanade Avenue.</string>
+
+    <string name="super_dome_title">The New Orleans Superdome</string>
+    <string name="super_dome_text_one">The Superdome is called like that for a reason - it is the largest enclosed arena in the world.</string>
+
+    <string name="opera_title">The First Opera Was Performed Here</string>
+    <string name="opera_text_one">The first opera in the United States of America was performed in the 1790s in New Orleans.</string>
+
+    <string name="poker_title">The Home Of Poker</string>
+    <string name="poker_text_one">New Orleans is widely considered to be the birthplace of both poker and craps!</string>
+
+    <string name="commanders_title">Commanders Palace</string>
+    <string name="commanders_address">1403 Washington Ave, New Orleans, LA 70130</string>
+    <string name="commanders_phone">504.899.8221</string>
+
+    <string name="august_title">Restaurant August</string>
+    <string name="august_address">301 Tchoupitoulas St, New Orleans, LA 70130</string>
+    <string name="august_phone">504.299.9777</string>
+
+</resources>

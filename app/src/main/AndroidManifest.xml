@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".FactsActivity" />
         <activity android:name=".HistoricalActivity"></activity>
+        <activity android:name=".EventsActivity"></activity>
+        <activity android:name=".RestaurantsActivity"></activity>
+
     </application>
 
 </manifest>
