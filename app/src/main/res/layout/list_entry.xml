@@ -6,7 +6,6 @@
     android:layout_height="156dp"
     android:minHeight="156dp">
 
-
     <RelativeLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
@@ -21,7 +20,7 @@
         android:paddingTop="12dp">
 
         <TextView
-            android:id="@+id/text_one"
+            android:id="@+id/text_top"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:textAppearance="?android:textAppearanceMedium"
@@ -30,23 +29,22 @@
             tools:text="Text one" />
 
         <TextView
-            android:id="@+id/text_two"
+            android:id="@+id/text_middle"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_below="@id/text_one"
+            android:layout_below="@id/text_top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             tools:text="Text two" />
 
         <TextView
-            android:id="@+id/text_three"
+            android:id="@+id/text_bottom"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_below="@id/text_two"
+            android:layout_below="@id/text_middle"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             tools:text="Text three" />
-
     </RelativeLayout>
 
     <ImageView
@@ -55,6 +53,4 @@
         android:layout_height="64dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true" />
-
-
 </RelativeLayout>

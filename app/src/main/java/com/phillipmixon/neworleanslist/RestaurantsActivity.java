@@ -20,8 +20,8 @@ public class RestaurantsActivity extends AppCompatActivity {
 
         final ArrayList<ListEntry> listEntries = new ArrayList<ListEntry>();
 
-        listEntries.add(new ListEntry(R.string.commanders_title, R.string.commanders_address, R.string.commanders_phone, R.drawable.ic_local_drink_black_24dp));
-        listEntries.add(new ListEntry(R.string.august_title, R.string.august_address, R.string.august_phone, R.drawable.ic_local_drink_black_24dp));
+        listEntries.add(new ListEntry(R.string.commanders_title, R.string.commanders_address, R.string.commanders_phone, R.mipmap.ic_local_drink_black_24dp));
+        listEntries.add(new ListEntry(R.string.august_title, R.string.august_address, R.string.august_phone, R.mipmap.ic_local_drink_black_24dp));
 
         ListEntryAdapter adapter = new ListEntryAdapter(this, listEntries, R.color.restaurants_colors);
 

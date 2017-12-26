@@ -16,10 +16,10 @@ public class HistoricalActivity extends AppCompatActivity {
 
         final ArrayList<ListEntry> listEntries = new ArrayList<ListEntry>();
         listEntries.add(new ListEntry(R.string.st_louis_cathedral, R.string.st_louis_cathedral_address,
-                R.string.st_louis_cathedral_phone, R.drawable.ic_local_see_black_24dp));
+                R.string.st_louis_cathedral_phone, R.drawable.istock_000001102708___st_louis_cathedral));
 
         listEntries.add(new ListEntry(R.string.preservation_hall, R.string.preservation_hall_address,
-                R.string.preservation_hall_phone, R.drawable.ic_library_music_black_24dp));
+                R.string.preservation_hall_phone, R.drawable.preservation_hall));
 
 
         ListEntryAdapter adapter = new ListEntryAdapter(this, listEntries, R.color.historical_colors);

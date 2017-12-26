@@ -36,13 +36,13 @@ public class ListEntryAdapter extends ArrayAdapter<ListEntry>  {
         // Get the {@link Word} object located at this position in the list
         ListEntry currentListEntry = getItem(position);
 
-        TextView textOne = (TextView) listItemView.findViewById(R.id.text_one);
+        TextView textOne = (TextView) listItemView.findViewById(R.id.text_top);
         textOne.setText(currentListEntry.getmTextOneId());
 
-        TextView textTwo = (TextView) listItemView.findViewById(R.id.text_two);
+        TextView textTwo = (TextView) listItemView.findViewById(R.id.text_middle);
         textTwo.setText(currentListEntry.getmTextTwoId());
 
-        TextView textThree = (TextView) listItemView.findViewById(R.id.text_three);
+        TextView textThree = (TextView) listItemView.findViewById(R.id.text_bottom);
         if (!(currentListEntry.getmTextThreeId() == -1)) {
             textThree.setText(currentListEntry.getmTextThreeId());
         }
